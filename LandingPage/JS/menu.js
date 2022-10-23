@@ -1,9 +1,12 @@
-const ham = document.querySelector(".ham");
-const menu = document.querySelector(".menu-navegacion");
+const ham =document.querySelector(".ham"),
+      menu=document.querySelector(".menu-navegacion");
+      
+ham.addEventListener("clic",()=>{
+    menu.classList.toggle("spread");
+} )
 
-console.log(menu)
-console.log(ham)
-
-ham.addEventListener("click", () => {
-    alert("click")
+ventana.addEventListener("clic", e =>{
+    if (menu.classList.contains("spread") && e.target != menú && e.target != hamburguesa){
+        menu.classList.toggle("spread")
+    }
 })
