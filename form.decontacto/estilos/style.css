@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('img/naranjas.jpg');
+    background-size: cover;
+}
+
+main{
+   max-width: 800;
+   width: 98%;
+   margin:auto;
+   padding: 0px;
+}
+.formulario h1{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formulario {
+    width: 400px;
+    background-color: rgba(15, 14, 14, 0.6);
+    background-size: cover;
+    padding: 20px 23px 20px;
+    margin:auto;
+    margin-top: 40px;
+    border-radius: 30px;
+    font-family: 'calibri';
+    box-shadow: 7px 13px 37px rgb(26, 24, 24);
+}
+
+.formulario__label{
+    width: 100%;
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor:pointer;
+    color: aliceblue;
+}   
+.formulario__grupo-input{
+    position: relative;
+
+}
+
+.formulario__input{
+    width: 100%;
+    background-color: rgba(241, 237, 192, 0.8);
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.formulario__input:focus{
+    border: 3px solid #000000;
+    outline: none;
+    box-shadow: 3px 0px 30px;
+}
+
+.formulario__input-error {
+    font-size:12px;
+    margin-bottom: 0;
+    display:none;
+}
+
+.formulario__input-error-activo{
+    display: block;
+}
+
+.formulario__validacion-estado{
+    position:absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100; /*revisa*/
+    font-size: 16px;
+    opacity: 0;
+}
+
+.formulario__checkbox{
+    margin-right: 5px;
+}
+
+
+.formulario__input-error{
+    height: 45px;
+    line-height: 45px;
+    background-color: #F66860;
+    padding: 0 15px;
+    border-radius: 3px;
+}
+
+ .formulario__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background-color: #c90e05;
+    padding:0 15px;
+    border-radius: 3px;
+    display:none;
+}
+
+.formulario__mensaje-activo{
+    display: block;
+}
+
+.formulario__mensaje p{
+    margin: 0;
+}
+
+.formulario__btn{
+    width:100%;
+    display: block;
+    background-color: rgb(252, 175, 8);
+    border: none;
+    border-radius: 3px;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    margin: 16px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer; 
+    transition: 1s ease all;
+}
+
+.formulario__btn:hover{
+    box-shadow: 3px 0px 10px;
+    color: #f1d015;
+}
+
+.formulario__mensaje-exito{
+    font-size: 14px;
+    color: green;
+    display: none;
+}
+
+.formulario__mensaje-exito-activo{
+    display: block;
+}
+
+.formulario__grupo-correcto .formulario__label .formulario__validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label{
+    color: #c90e05;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado{
+    color: #c90e05;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input{
+    border: 3px solid #c90e05;
+}

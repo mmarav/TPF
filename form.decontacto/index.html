@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deporte y nutricion</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="https://github.com/falconmasters/formulario-css-grid.git">
+    <Link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wgt@400;700&display=swap">
+     <link rel="stylesheet" href="estilos/formulario.js">
+</head>
+
+<body>
+    <main>
+        <form action="" class="formulario" id="formulario">
+            <h1>Contactate con nosotros</h1>
+            <div class="formulario__grupo" id="nombre">
+                <label for="nombre" class="formulario__label">Nombre</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="nombre" id="nombre"
+                        placeholder="Ingrese su nombre">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Porfavor completa el formulario</p>
+            </div>
+
+            <div class="formulario__grupo" id="apellido">
+                <label for="apellido" class="formulario__label">Apellido</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                        placeholder="Ingrese su Apellido">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Porfavor completa el formulario</p>
+            </div>
+
+            <div class="formulario__grupo" id="telefono">
+                <label for="telefono" class="formulario__label">Telefono</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="telefono" id="telefono"
+                        placeholder="Ingrese su Telefono">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Porfavor completa el formulario</p>
+            </div>
+
+            <div class="formulario__grupo" id="correo">
+                <label for="correo" class="formulario__label">Correo electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="correo" id="correo"
+                        placeholder="Ingrese su Correo electronico">
+                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                </div>
+                <p class="formulario__input-error">Porfavor completa el formulario</p>
+            </div>
+            
+            <div class="formulario__grupo" id="terminosYcondiciones">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Terminos y Condiciones
+                </label>
+                <div class="formulario__mensaje" id="mensaje">
+                    <p><i class="fas fa-eclamation-triangle"></i> <b>Error:</b>Por favor rellena el formulario</p>
+                </div>
+             </div>
+
+             <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Enviado exitosamente!</p>
+            </div>
+        </form>
+    </main> 
+    <script src="estilos/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
