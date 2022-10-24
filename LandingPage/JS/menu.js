@@ -6,7 +6,7 @@ ham.addEventListener("clic",()=>{
 } )
 
 ventana.addEventListener("clic", e =>{
-    if (menu.classList.contains("spread") && e.target != menú && e.target != hamburguesa){
+    if (menu.classList.contains("spread") && e.target != menu && e.target != ham){
         menu.classList.toggle("spread")
     }
 })
