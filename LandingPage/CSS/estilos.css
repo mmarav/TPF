@@ -328,8 +328,7 @@ body{
         margin-bottom: 40px;
     }
 }
-
-@media  and (max-width:500px) {
+@media screen and (max-width: 800px){
 
     .menu-navegacion {
         width: 65vw;
