@@ -1,23 +1,12 @@
-const ham = document.querySelector(".ham");
-const menu = document.querySelector(".menu-navegacion");
+const hamburguer = document.querySelector('.hamburguer'),
+    menu = document.querySelector('.menu-navegacion');
 
-console.log(menu)
-console.log(ham)
-
-ham.addEventListener("clic", () => {
-    menu.classList.toggle("spread");
+hamburguer.addEventListener('click', () => {
+    menu.classList.toggle('spread');
 })
 
-<<HEAD
-ventana.addEventListener ("clic"), e =>{
-if (menu.classList.contains("spread") && e.target != menu && e.target != ham)
-        menu.classList.toggle ("spread")}
-
-window.addEventListener("clic", e => {
-    if(menu.classList.contains("spread") && e.target != menu && e.target != ham) {
-        
-        menu.classList.toggle("spread")
+window.addEventListener("click", e => {
+    if (menu.classList.contains('spread') && e.target != menu && e.target != hamburguer) {
+        menu.classList.toggle('spread');
     }
 })
-
->>> b617ea4be0ac1835182079dc402ea02db39f8742
